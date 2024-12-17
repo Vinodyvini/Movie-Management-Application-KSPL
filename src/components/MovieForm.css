@@ -1,0 +1,138 @@
+.movie-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie-form h3 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.movie-form label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+    width: 100%;
+}
+
+.movie-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.movie-form input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.movie-form button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.movie-form button:hover {
+    background-color: #0056b3;
+}
+
+.movie-form .cancel-btn {
+    background-color: #dc3545;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.movie-form .cancel-btn:hover {
+    background-color: #c82333;
+}
+
+.movie-form .input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.movie-form .buttons {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .movie-form {
+        padding: 15px;
+    }
+
+    .movie-form h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .movie-form input {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .movie-form button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .movie-form .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-form {
+        padding: 10px;
+        margin: 20px 10px;
+    }
+
+    .movie-form h3 {
+        font-size: 18px;
+    }
+
+    .movie-form input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .movie-form button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .movie-form .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

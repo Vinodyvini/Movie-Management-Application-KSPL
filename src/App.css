@@ -1,0 +1,118 @@
+.movie-list,
+.favorite-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie-card,
+.favorite-card {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.movie-poster,
+.favorite-poster {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.movie-detail,
+.favorite-title {
+    margin: 10px;
+    font-size: 18px;
+    line-height: 1.4;
+    padding: 0 10px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.add-movie-btn {
+    position: absolute;
+    right: 0px;
+    top: 50px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.add-movie-btn:hover {
+    background-color: #218838;
+}
+
+.movie-detail-page {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 50px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .movie-card,
+    .favorite-card {
+        width: 40%;
+    }
+
+    .movie-detail-page {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .add-movie-btn {
+        position: absolute;
+        bottom: auto;
+        right: 20px;
+        background-color: #28a745;
+        color: white;
+        padding: 10px 15px;
+        font-size: 14px;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .add-movie-btn:hover {
+        background-color: #218838;
+        transform: scale(1.05);
+    }
+
+    .movie-detail,
+    .favorite-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .movie-card,
+    .favorite-card {
+        width: 100%;
+    }
+
+    .movie-poster,
+    .favorite-poster {
+        height: 140px;
+    }
+
+    .add-movie-btn {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+}
